@@ -130,12 +130,46 @@ export default function AttendPage() {
                   </form>
                 </div>
               ) : (
-                <div style={{background:'var(--silver)',borderRadius:'var(--radius-lg)',padding:'var(--space-2xl)',display:'flex',alignItems:'center',justifyContent:'center',minHeight:300}}>
-                  <div style={{textAlign:'center',color:'var(--text-muted)'}}>
-                    <MapPin size={48} style={{marginBottom:'var(--space-md)',opacity:.3}} />
-                    <p style={{fontFamily:'var(--font-display)',fontSize:'1.2rem',fontWeight:700,color:'var(--text-secondary)'}}>Parliament House</p>
-                    <p style={{fontSize:'.85rem'}}>Fengtian Prefecture</p>
-                  </div>
+                <div style={{background:'var(--silver)',borderRadius:'var(--radius-lg)',overflow:'hidden',minHeight:360,position:'relative'}}>
+                  <svg viewBox='0 0 500 360' style={{width:'100%',height:'100%',display:'block'}}>
+                    <rect width='500' height='360' fill='#e8ecf1'/>
+                    <path d='M0 300 Q100 280 200 290 Q300 300 400 280 Q450 270 500 275 L500 360 L0 360Z' fill='#b8d4e8' opacity='0.5'/>
+                    <line x1='0' y1='160' x2='500' y2='160' stroke='#fff' strokeWidth='18' opacity='0.8'/>
+                    <line x1='250' y1='0' x2='250' y2='360' stroke='#fff' strokeWidth='14' opacity='0.8'/>
+                    <line x1='0' y1='260' x2='500' y2='260' stroke='#fff' strokeWidth='10' opacity='0.7'/>
+                    <line x1='140' y1='0' x2='140' y2='360' stroke='#e0e4ea' strokeWidth='8'/>
+                    <line x1='360' y1='0' x2='360' y2='360' stroke='#e0e4ea' strokeWidth='8'/>
+                    <rect x='280' y='20' width='70' height='70' rx='35' fill='#c5dbb5' opacity='0.6'/>
+                    <rect x='60' y='30' width='40' height='40' rx='20' fill='#c5dbb5' opacity='0.5'/>
+                    <rect x='160' y='65' width='130' height='85' rx='4' fill='#1a3a5c'/>
+                    <rect x='170' y='75' width='110' height='65' rx='2' fill='#254d78'/>
+                    <circle cx='225' cy='107' r='20' fill='#c9a96e' opacity='0.7'/>
+                    <rect x='195' y='130' width='60' height='12' fill='#8c9096' opacity='0.3'/>
+                    <rect x='35' y='180' width='55' height='48' rx='2' fill='#c4c8ce'/><rect x='42' y='188' width='41' height='33' rx='1' fill='#dde1e7'/>
+                    <rect x='310' y='95' width='55' height='42' rx='2' fill='#c4c8ce'/><rect x='316' y='101' width='43' height='30' rx='1' fill='#dde1e7'/>
+                    <rect x='380' y='100' width='55' height='45' rx='2' fill='#c4c8ce'/><rect x='386' y='107' width='43' height='31' rx='1' fill='#dde1e7'/>
+                    <rect x='55' y='280' width='85' height='48' rx='2' fill='#c4c8ce'/><rect x='63' y='288' width='69' height='32' rx='1' fill='#dde1e7'/>
+                    <rect x='295' y='280' width='62' height='42' rx='2' fill='#c4c8ce'/><rect x='301' y='287' width='50' height='28' rx='1' fill='#dde1e7'/>
+                    <rect x='375' y='275' width='70' height='52' rx='2' fill='#c4c8ce'/><rect x='383' y='283' width='54' height='36' rx='1' fill='#dde1e7'/>
+                    <text x='225' y='175' textAnchor='middle' fontSize='9' fontWeight='700' fill='#0e1311' fontFamily='sans-serif'>Parliament House</text>
+                    <text x='63' y='245' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Supreme Court</text>
+                    <text x='265' y='245' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Constitutional Avenue</text>
+                    <text x='338' y='152' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>National Library</text>
+                    <text x='408' y='160' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>National Archives</text>
+                    <text x='98' y='343' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Fengtian Museum</text>
+                    <text x='326' y='337' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Republic Square</text>
+                    <text x='410' y='342' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Visitors Pavilion</text>
+                    <text x='315' y='55' textAnchor='middle' fontSize='7' fill='#505050' fontFamily='sans-serif'>Central Park</text>
+                    <text x='435' y='353' textAnchor='middle' fontSize='7' fill='#8c9096' fontFamily='sans-serif'>Ling River</text>
+                    <circle cx='225' cy='175' r='5' fill='#c0392b'/>
+                    <circle cx='225' cy='175' r='9' fill='none' stroke='#c0392b' strokeWidth='1.5' opacity='0.5'/>
+                    <g transform='translate(462,28)'>
+                      <circle cx='0' cy='0' r='16' fill='#fff' fillOpacity='0.8' stroke='#c4c8ce' strokeWidth='1'/>
+                      <text x='0' y='-6' textAnchor='middle' fontSize='8' fontWeight='700' fill='#1a3a5c' fontFamily='sans-serif'>N</text>
+                      <line x1='0' y1='-3' x2='0' y2='3' stroke='#1a3a5c' strokeWidth='1'/>
+                      <polygon points='0,-5 -2,-1 2,-1' fill='#1a3a5c'/>
+                    </g>
+                  </svg>
                 </div>
               )}
             </div>
