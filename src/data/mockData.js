@@ -509,7 +509,7 @@ export const committees = [
   { id: 5, name: '社會福利與衛生委員會', chair: 'Teai Kinmen', members: 18, description: '審查社會安全、醫療保健、勞工權益、弱勢扶助及公共衛生相關政策。' },
   { id: 6, name: '教育與文化委員會', chair: 'Chiang Menkin', members: 18, description: '審查教育制度、文化保存、學術研究、語言政策及傳播相關政策。' },
   { id: 7, name: '基礎建設與環境委員會', chair: 'Tsen Ieepon', members: 20, description: '審查交通建設、水資源管理、環境保護及城鄉發展相關政策。' },
-  { id: 8, name: '資訊與隱私保護委員會', chair: 'Motyselin Setti', members: 18, description: '審查數位治理、個人資料保護、資訊安全及科技倫理相關政策。' },
+  { id: 8, name: '資訊與隱私保護委員會', chair: 'Mahmoud Al-Rashid', members: 18, description: '審查數位治理、個人資料保護、資訊安全及科技倫理相關政策。' },
 ];
 
 export const otherOfficials = [
