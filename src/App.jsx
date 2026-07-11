@@ -1,4 +1,4 @@
-﻿import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,6 +9,8 @@ import MembersPage from './pages/MembersPage';
 import CommitteesPage from './pages/CommitteesPage';
 import LawsPage from './pages/LawsPage';
 import NewsPage from './pages/NewsPage';
+import PetitionPage from './pages/PetitionPage';
+import ConstitutionPage from './pages/ConstitutionPage';
 
 export default function App() {
   const location = useLocation();
@@ -27,7 +29,7 @@ export default function App() {
           <Route path="/members" element={<MembersPage />} />
           <Route path="/committees" element={<CommitteesPage />} />
           <Route path="/laws" element={<LawsPage />} />
-          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news" element={<NewsPage />} />`n          <Route path="/petition" element={<PetitionPage />} />`n          <Route path="/constitution" element={<ConstitutionPage />} />
         </Routes>
       </main>
       <Footer />

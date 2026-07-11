@@ -1,4 +1,5 @@
-﻿import { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { laws } from '../data/mockData';
 
 export default function LawsPage() {
@@ -19,9 +20,11 @@ export default function LawsPage() {
           </div>
           <div style={{marginTop:'var(--space-2xl)',padding:'var(--space-xl)',background:'var(--white)',border:'1px solid var(--gold-light)',borderRadius:'var(--radius-lg)',borderLeft:'4px solid var(--gold)'}}>
             <h3 style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.1rem',marginBottom:'var(--space-md)',color:'var(--near-black)'}}>Constitutional Documents</h3>
-            <div style={{display:'flex',gap:'var(--space-lg)',flexWrap:'wrap'}}>
-              <a href="#" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem'}}>Provisional Constitution (RY5)</a>
-              <a href="#" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem'}}>Constitution of Bronoto (RY6)</a>
+            <div style={{display:'flex',gap:'var(--space-lg)',flexWrap:'wrap',alignItems:'center'}}>
+              <Link to="/constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
+                Constitution of Bronoto
+                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:500}}>國會辯論中</span>
+              </Link>
             </div>
           </div>
         </div>

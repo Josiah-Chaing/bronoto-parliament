@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
@@ -31,10 +31,7 @@ export default function Header() {
             <circle cx="24" cy="24" r="4" fill="currentColor"/>
             <path d="M2 24 Q16 34 24 24 Q32 14 46 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
           </svg>
-          <span>
-            Bronoto Parliament
-            <span className="brand-sub">白東民國國會</span>
-          </span>
+          <span class="brand-text">Bronoto Parliament<span class="brand-sub">白東民國國會</span></span>
         </Link>
         <button className="mobile-nav-toggle" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? '\u2715' : '\u2630'}</button>
         <nav>
@@ -44,8 +41,8 @@ export default function Header() {
                 <Link to={item.path} className={location.pathname === item.path ? 'active' : ''} onClick={() => setMenuOpen(false)}>{item.label}</Link>
               </li>
             ))}
-            <li><button className="nav-cta-signup" onClick={() => window.open('https://parliament.bronoto.bd', '_blank')}>EN</button></li>
-            <li><button className="nav-cta-login" onClick={() => window.open('https://parliament.bronoto.bd', '_blank')}>白語</button></li>
+            <li><button className="nav-cta-signup" onClick={() => {}}>EN</button></li>
+            <li><button className="nav-cta-login" onClick={() => {}}>白語</button></li>
           </ul>
         </nav>
       </div>

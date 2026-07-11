@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { siteConfig, newsArticles, laws } from '../data/mockData';
 import { Users, Scale, FileText, Search, ArrowUp, Sparkles, Paperclip, Mic } from 'lucide-react';
@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 function QuickLinks() {
   const items = [
-    { to: '/members', icon: Users, title: 'Members', desc: 'Seven elected representatives of the people.' },
+    { to: '/members', icon: Users, title: 'Members', desc: '500 Members of Parliament representing 21 million citizens.' },
     { to: '/laws', icon: Scale, title: 'Legislation', desc: 'Browse enacted laws and pending bills.' },
     { to: '#', icon: FileText, title: 'Attend', desc: 'Apply to observe Parliamentary sessions.' },
-    { to: '#', icon: Search, title: 'Petition', desc: 'Submit a petition to Parliament.' },
+    { to: '/petition', icon: Search, title: 'Petition', desc: 'Submit a constitutional petition to Parliament.' },
   ];
   return (
     <div className="quick-links">
@@ -81,16 +81,18 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-badge-group" ref={badgeRef}>
-            <span className="hero-badge-dark"><Sparkles size={12} /> Sixth Year</span>
-            <span className="hero-badge-light">Parliament of the Republic of Bronoto</span>
+            <span className="hero-badge-dark"><Sparkles size={12} /> M6</span>
+            <span className="hero-badge-light">Bronoto Parliament</span>
           </div>
           <h1 className="hero-headline" ref={headlineRef}>Power Flows<br/>Like Water</h1>
           <p className="hero-subtitle" ref={subtitleRef}>
-            {siteConfig.tagline}。The supreme legislative body of the people. Since the April 27 Resolution, Bronoto has chosen constitutional democracy as its vessel and the rule of law as its shore.
+            {siteConfig.tagline}<br/>The supreme legislative body of the people.<br/>
+自四月二十七日決議以來，白東選擇了憲政民主為舟，法治為岸。<br/>
+Since the April 27 Resolution, Bronoto has chosen constitutional democracy as its vessel and the rule of law as its shore.
           </p>
           <div className="hero-search" ref={searchRef}>
             <div className="hero-search-outer">
-              <div className="hero-search-meta"><span>{siteConfig.totalBudget} <span className="hero-search-upgrade">FY6 Budget</span></span><span className="hero-search-powered"><Sparkles size={10} /> {siteConfig.currentSession}</span></div>
+              <div className="hero-search-meta"><span>{siteConfig.totalBudget} <span className="hero-search-upgrade">M6 BUDGET</span></span><span className="hero-search-powered"><Sparkles size={10} /> {siteConfig.currentSession}</span></div>
               <div className="hero-search-input-row"><input type="text" placeholder="Search bills, members, records…" /><button className="hero-search-submit" aria-label="Search"><ArrowUp size={16} /></button></div>
               <div className="hero-search-actions"><div className="hero-search-actions-left"><button className="hero-search-action-btn"><Paperclip size={12} /> Attach</button><button className="hero-search-action-btn"><Mic size={12} /> Voice</button><button className="hero-search-action-btn"><Search size={12} /> Prompts</button></div><span className="hero-search-count">0/3,000</span></div>
             </div>
