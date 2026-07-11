@@ -1,0 +1,31 @@
+﻿import { useState, useMemo } from 'react';
+import { laws } from '../data/mockData';
+
+export default function LawsPage() {
+  const [tab, setTab] = useState('all');
+  const [search, setSearch] = useState('');
+  const tabs = [{k:'all',l:'All'},{k:'passed',l:'Enacted'},{k:'review',l:'In Review'},{k:'proposed',l:'Proposed'}];
+  const filtered = useMemo(()=>laws.filter(l=>(tab==='all'||l.status===tab)&&(!search||l.title.includes(search)||l.number.includes(search))),[tab,search]);
+  return (
+    <>
+      <div className="page-header"><div className="page-header-inner"><h1>Legislation &amp; Records</h1></div></div>
+      <section className="page-section white">
+        <div className="section-inner">
+          <div className="search-bar" style={{marginBottom:'var(--space-xl)'}}><input type="text" placeholder="Search bills…" value={search} onChange={e=>setSearch(e.target.value)}/></div>
+          <div className="chip-group">{tabs.map(t=>(<button key={t.k} className={`chip${tab===t.k?' active':''}`} onClick={()=>setTab(t.k)}>{t.l}</button>))}</div>
+          <div style={{background:'var(--white)',border:'1px solid var(--border-color)',borderRadius:'var(--radius-lg)',overflow:'hidden'}}>
+            {filtered.map(law=>(<div key={law.id} className="law-card"><span className="law-number">{law.number}</span><span className="law-title">{law.title}</span><span style={{fontSize:'.78rem',color:'var(--text-muted)',marginRight:'var(--space-md)'}}>{law.date}</span><span className={`law-status status-${law.status}`}>{law.statusLabel}</span></div>))}
+            {filtered.length===0&&<div className="empty-state">No matching legislation.</div>}
+          </div>
+          <div style={{marginTop:'var(--space-2xl)',padding:'var(--space-xl)',background:'var(--white)',border:'1px solid var(--gold-light)',borderRadius:'var(--radius-lg)',borderLeft:'4px solid var(--gold)'}}>
+            <h3 style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.1rem',marginBottom:'var(--space-md)',color:'var(--near-black)'}}>Constitutional Documents</h3>
+            <div style={{display:'flex',gap:'var(--space-lg)',flexWrap:'wrap'}}>
+              <a href="#" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem'}}>Provisional Constitution (RY5)</a>
+              <a href="#" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem'}}>Constitution of Bronoto (RY6)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
