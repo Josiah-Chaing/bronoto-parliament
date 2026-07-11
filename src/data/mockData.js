@@ -68,7 +68,7 @@ export const parliamentMembers = [
   { id: 67, name: 'Tariq Saab', party: '自由共和黨', district: '津川省第5選區', committee: '外交與國防委員會', since: '民國5年', role: '召集委員', email: 'tariq.saab@parliament.bd' },
   { id: 68, name: 'Oliver Richter', party: '民主黨', district: '津川省第6選區', committee: '財政與經濟委員會', since: '民國6年', role: '委員', email: 'oliver.richter@parliament.bd' },
   { id: 69, name: 'Telyan Setti', party: '民主黨', district: '津川省第7選區', committee: '社會福利與衛生委員會', since: '民國4年', role: '委員', email: 'telyan.setti@parliament.bd' },
-  { id: 70, name: 'Abolyo Retyak', party: '無黨籍', district: '津川省第8選區', committee: '教育與文化委員會', since: '民國5年', role: '委員', email: 'abolyo.retyak@parliament.bd' },
+  { id: 70, name: 'Angelababy Robert', party: '無黨籍', district: '津川省第8選區', committee: '教育與文化委員會', since: '民國5年', role: '委員', email: 'angelababy.robert@parliament.bd' },
   { id: 71, name: 'Matthias Koehler', party: '社會團結黨', district: '津川省第1選區', committee: '基礎建設與環境委員會', since: '民國5年', role: '委員', email: 'matthias.koehler@parliament.bd' },
   { id: 72, name: 'Setyan Luo', party: '自由共和黨', district: '津川省第2選區', committee: '資訊與隱私保護委員會', since: '民國6年', role: '委員', email: 'setyan.luo@parliament.bd' },
   { id: 73, name: 'Hu Rosyn', party: '民主黨', district: '津川省第3選區', committee: '預算審查委員會', since: '民國6年', role: '委員', email: 'hu.rosyn@parliament.bd' },
@@ -502,14 +502,14 @@ export const parliamentMembers = [
 ];
 
 export const committees = [
-  { id: 1, name: '預算審查委員會', chair: 'Tseng Hontso', members: 5, description: '審查年度預算、決算、特別預算及政府財政計畫。民國六年度歲出預算修正案即由本委員會審查。' },
-  { id: 2, name: '內務與法制委員會', chair: 'Motyselin Setti', members: 5, description: '審查法律案、憲法修正案、司法制度、人權保障、地方自治及民政相關政策。' },
-  { id: 3, name: '外交與國防委員會', chair: 'Abolyo Putyag', members: 5, description: '審查外交條約、國防安全、國際合作及海外事務相關政策。' },
-  { id: 4, name: '財政與經濟委員會', chair: 'Lyo Minhe', members: 5, description: '審查稅制、金融監理、產業發展、貿易政策及勞動相關政策。' },
-  { id: 5, name: '社會福利與衛生委員會', chair: 'Teai Kinmen', members: 5, description: '審查社會安全、醫療保健、勞工權益、弱勢扶助及公共衛生相關政策。' },
-  { id: 6, name: '教育與文化委員會', chair: 'Chiang Menkin', members: 5, description: '審查教育制度、文化保存、學術研究、語言政策及傳播相關政策。' },
-  { id: 7, name: '基礎建設與環境委員會', chair: 'Tsen Ieepon', members: 4, description: '審查交通建設、水資源管理、環境保護及城鄉發展相關政策。' },
-  { id: 8, name: '資訊與隱私保護委員會', chair: 'Motyselin Setti', members: 4, description: '審查數位治理、個人資料保護、資訊安全及科技倫理相關政策。' },
+  { id: 1, name: '預算審查委員會', chair: 'Tseng Hontso', members: 22, description: '審查年度預算、決算、特別預算及政府財政計畫。民國六年度歲出預算修正案即由本委員會審查。' },
+  { id: 2, name: '內務與法制委員會', chair: 'Motyselin Setti', members: 20, description: '審查法律案、憲法修正案、司法制度、人權保障、地方自治及民政相關政策。' },
+  { id: 3, name: '外交與國防委員會', chair: 'Abolyo Putyag', members: 20, description: '審查外交條約、國防安全、國際合作及海外事務相關政策。' },
+  { id: 4, name: '財政與經濟委員會', chair: 'Lyo Minhe', members: 20, description: '審查稅制、金融監理、產業發展、貿易政策及勞動相關政策。' },
+  { id: 5, name: '社會福利與衛生委員會', chair: 'Teai Kinmen', members: 18, description: '審查社會安全、醫療保健、勞工權益、弱勢扶助及公共衛生相關政策。' },
+  { id: 6, name: '教育與文化委員會', chair: 'Chiang Menkin', members: 18, description: '審查教育制度、文化保存、學術研究、語言政策及傳播相關政策。' },
+  { id: 7, name: '基礎建設與環境委員會', chair: 'Tsen Ieepon', members: 20, description: '審查交通建設、水資源管理、環境保護及城鄉發展相關政策。' },
+  { id: 8, name: '資訊與隱私保護委員會', chair: 'Motyselin Setti', members: 18, description: '審查數位治理、個人資料保護、資訊安全及科技倫理相關政策。' },
 ];
 
 export const otherOfficials = [
