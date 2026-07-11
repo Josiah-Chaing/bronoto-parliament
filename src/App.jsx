@@ -10,6 +10,7 @@ import CommitteesPage from './pages/CommitteesPage';
 import LawsPage from './pages/LawsPage';
 import NewsPage from './pages/NewsPage';
 import PetitionPage from './pages/PetitionPage';
+import AttendPage from './pages/AttendPage';
 import ConstitutionPage from './pages/ConstitutionPage';
 import ProvisionalConstitutionPage from './pages/ProvisionalConstitutionPage';
 
@@ -30,7 +31,7 @@ export default function App() {
           <Route path="/members" element={<MembersPage />} />
           <Route path="/committees" element={<CommitteesPage />} />
           <Route path="/laws" element={<LawsPage />} />
-          <Route path="/news" element={<NewsPage />} />`n          <Route path="/petition" element={<PetitionPage />} />`n          <Route path="/constitution" element={<ConstitutionPage />} />`n          <Route path="/provisional-constitution" element={<ProvisionalConstitutionPage />} />
+          <Route path="/news" element={<NewsPage />} />`n          <Route path="/petition" element={<PetitionPage />} />`n          <Route path="/attend" element={<AttendPage />} />`n          <Route path="/constitution" element={<ConstitutionPage />} />`n          <Route path="/provisional-constitution" element={<ProvisionalConstitutionPage />} />
         </Routes>
       </main>
       <Footer />

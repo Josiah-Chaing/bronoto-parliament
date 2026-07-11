@@ -11,7 +11,7 @@ function QuickLinks() {
   const items = [
     { to: '/members', icon: Users, title: 'Members', desc: '500 Members of Parliament representing 21 million citizens.' },
     { to: '/laws', icon: Scale, title: 'Legislation', desc: 'Browse enacted laws and pending bills.' },
-    { to: '#', icon: FileText, title: 'Attend', desc: 'Apply to observe Parliamentary sessions.' },
+    { to: '/attend', icon: FileText, title: 'Attend', desc: 'Apply to observe Parliamentary sessions.' },
     { to: '/petition', icon: Search, title: 'Petition', desc: 'Submit a constitutional petition to Parliament.' },
   ];
   return (

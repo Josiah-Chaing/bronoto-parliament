@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="footer-col"><h4>Language</h4><ul><li><a href="#">白語</a></li><li><a href="#">正體中文</a></li><li><a href="#">English</a></li></ul></div>
         </div>
         <div className="footer-bottom">
-          <span>© Republic Year 6 · Bronoto Parliament</span>
+          <span>© M6 · Bronoto Parliament</span>
           <span>info@parliament.bd</span>
         </div>
       </div>
