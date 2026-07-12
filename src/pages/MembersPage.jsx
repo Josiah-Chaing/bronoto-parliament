@@ -13,7 +13,7 @@ export default function MembersPage() {
   const [selected, setSelected] = useState(null);
 
   const parties = [...new Set(parliamentMembers.map(m => m.party))];
-  const committees = [...new Set(parliamentMembers.map(m => m.committee))];
+  const committees = [...new Set(parliamentMembers.map(m => m.committee))].filter(c => c !== '—');
   const divisions = [...new Set(parliamentMembers.map(m => m.district.replace(/第.*/, '')))];
 
   const filtered = useMemo(() => {
