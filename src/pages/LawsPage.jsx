@@ -5,7 +5,7 @@ import { laws } from '../data/mockData';
 export default function LawsPage() {
   const [tab, setTab] = useState('all');
   const [search, setSearch] = useState('');
-  const tabs = [{k:'all',l:'All'},{k:'passed',l:'Enacted'},{k:'review',l:'In Review'},{k:'proposed',l:'Proposed'}];
+  const tabs = [{k:'all',l:'All'},{k:'passed',l:'生效'},{k:'review',l:'制定中'}];
   const filtered = useMemo(()=>laws.filter(l=>(tab==='all'||l.status===tab)&&(!search||l.title.includes(search)||l.number.includes(search))),[tab,search]);
   return (
     <>
@@ -15,7 +15,7 @@ export default function LawsPage() {
           <div className="search-bar" style={{marginBottom:'var(--space-xl)'}}><input type="text" placeholder="Search bills…" value={search} onChange={e=>setSearch(e.target.value)}/></div>
           <div className="chip-group">{tabs.map(t=>(<button key={t.k} className={`chip${tab===t.k?' active':''}`} onClick={()=>setTab(t.k)}>{t.l}</button>))}</div>
           <div style={{background:'var(--white)',border:'1px solid var(--border-color)',borderRadius:'var(--radius-lg)',overflow:'hidden'}}>
-            {filtered.map(law=>(<div key={law.id} className="law-card"><span className="law-number">{law.number}</span><span className="law-title">{law.title}</span><span style={{fontSize:'.78rem',color:'var(--text-muted)',marginRight:'var(--space-md)'}}>{law.date}</span><span className={`law-status status-${law.status}`}>{law.statusLabel}</span></div>))}
+            {filtered.map(law=>(<div key={law.id} className="law-card"><span className="law-number"></span><span className="law-title">{law.title}</span><span style={{fontSize:'.78rem',color:'var(--text-muted)',marginRight:'var(--space-md)'}}></span><span className={`law-status status-${law.status}`}>{law.statusLabel}</span></div>))}
             {filtered.length===0&&<div className="empty-state">No matching legislation.</div>}
           </div>
           <div style={{marginTop:'var(--space-2xl)',padding:'var(--space-xl)',background:'var(--white)',border:'1px solid var(--gold-light)',borderRadius:'var(--radius-lg)',borderLeft:'4px solid var(--gold)'}}>
@@ -23,11 +23,11 @@ export default function LawsPage() {
             <div style={{display:'flex',gap:'var(--space-lg)',flexWrap:'wrap',alignItems:'center'}}>
               <Link to="/provisional-constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
                 Provisional Constitution (RY5)
-                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--blue-light)',color:'var(--blue-deep)',fontWeight:500}}>已公布</span>
+                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--blue-light)',color:'var(--blue-deep)',fontWeight:500}}>已失效</span>
               </Link>
               <Link to="/constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
                 Constitution of Bronoto
-                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:500}}>國會辯論中</span>
+                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:500}}>國民公投中</span>
               </Link>
             </div>
           </div>

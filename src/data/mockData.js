@@ -529,16 +529,13 @@ export const newsArticles = [
 ];
 
 export const laws = [
-  { id: 1, number: 'M4法字第055號', title: '大立憲法', status: 'passed', statusLabel: '已公布', date: 'M4年11月5日', content: 'constitution' },
-  { id: 2, number: 'M5法字第042號', title: '司法組織法修正草案', status: 'review', statusLabel: '委員會審查', date: 'M5年9月1日' },
-  { id: 3, number: 'M5法字第035號', title: '國會職權行使法修正草案', status: 'review', statusLabel: '委員會審查', date: 'M5年7月15日' },
-  { id: 4, number: 'M5法字第028號', title: '行政程序法修正草案', status: 'review', statusLabel: '委員會審查', date: 'M5年6月1日' },
-  { id: 5, number: 'M6法字第007號', title: '反極權主義宣傳法案', status: 'review', statusLabel: '委員會審查', date: 'M6年6月1日' },
-  { id: 7, number: 'M6法字第021號', title: '地方自治法案', status: 'review', statusLabel: '委員會審查', date: 'M6年5月15日' },
-  { id: 8, number: 'M6法字第018號', title: '移民管理法修正草案', status: 'review', statusLabel: '委員會審查', date: 'M6年3月10日' },
-  { id: 9, number: 'M6法字第022號', title: '國籍法修正草案', status: 'proposed', statusLabel: '提案階段', date: 'M6年7月1日' },
-  { id: 10, number: 'M6法字第035號', title: '政黨法修正草案', status: 'proposed', statusLabel: '提案階段', date: 'M6年7月1日' },
-  { id: 11, number: 'M6法字第041號', title: '公職人員選舉法案', status: 'proposed', statusLabel: '提案階段', date: 'M6年7月15日' },
+  { id: 1, title: '大立憲法', status: 'passed', statusLabel: '生效', content: 'constitution' },
+  { id: 2, title: '國籍法', status: 'passed', statusLabel: '生效' },
+  { id: 3, title: '住所登記法', status: 'passed', statusLabel: '生效' },
+  { id: 7, title: '反極權主義宣傳法案', status: 'review', statusLabel: '制定中' },
+  { id: 8, title: '地方自治法案', status: 'review', statusLabel: '制定中' },
+  { id: 10, title: '政黨法案', status: 'review', statusLabel: '制定中' },
+  { id: 11, title: '公職人員選舉法案', status: 'review', statusLabel: '制定中' },
 ];
 
 export const siteConfig = {
