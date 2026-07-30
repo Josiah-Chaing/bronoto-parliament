@@ -523,15 +523,17 @@ export const newsArticles = [
   { id: 3, title: '國會舉行《公職人員財產公示法案》公聽會', date: 'M6年6月十八日', category: '公聽會', summary: '多位學者與公民團體代表出席發言，就財產公示範圍與罰則標準進行討論。' },
   { id: 4, title: '自由共和黨與民主黨就憲法修正達成共識', date: 'M6年6月十二日', category: '憲政', summary: '兩大黨在憲法法院組織法修正案上達成跨黨派共識。總理 Abolyo Putyag 表示樂觀其成。' },
   { id: 5, title: '中央監察院提交年度廉政報告', date: 'M6年5月20日', category: '監察', summary: '中央監察院院長 Aselin Fodepat 向國會提交年度廉政報告，肯定公職人員財產申報制度實施成效。' },
-  { id: 6, title: '國會通過《地方自治法修正草案》', date: 'M6年5月十五日', category: '法案', summary: '強化地方財政自主權，明確中央與地方權限劃分。' },
   { id: 7, title: '「憲政民主與治水智慧」國際學術研討會', date: 'M6年5月7日', category: '國際交流', summary: '來自世界各地的憲法學者與治水專家共聚奉天都，探討水文明與憲政秩序的深層聯繫。' },
   { id: 8, title: '國會公布新一會期開議日程', date: 'M6年4月二十五日', category: '會議', summary: '新會期將於七月一日開議，預計審議多項法案，包括歲出預算案及憲法相關修正案。' },
+  { id: 9, title: '憲法國民公投將於M6年8月8日進行', date: 'M6年7月24日', category: '憲政', summary: '全體白東民國國民將於民國六年八月八日就憲法草案進行全民公投，以決定國家根本大法。' },
+  { id: 10, title: '外國法及判例補充適用法通過', date: 'M6年7月31日', category: '法案', summary: '白東法院得參引法治先進國家成文法、判例法。本法為白東司法體系引進比較法資源提供法律依據。' },
 ];
 
 export const laws = [
   { id: 1, title: '大立憲法', status: 'passed', statusLabel: '生效', content: 'constitution' },
   { id: 2, title: '國籍法', status: 'passed', statusLabel: '生效' },
   { id: 3, title: '住所登記法', status: 'passed', statusLabel: '生效' },
+  { id: 4, title: '外國法及判例補充適用法', status: 'passed', statusLabel: '生效' },
   { id: 7, title: '反極權主義宣傳法案', status: 'review', statusLabel: '制定中' },
   { id: 8, title: '地方自治法案', status: 'review', statusLabel: '制定中' },
   { id: 10, title: '政黨法案', status: 'review', statusLabel: '制定中' },
