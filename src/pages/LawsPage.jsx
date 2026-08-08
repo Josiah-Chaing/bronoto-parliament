@@ -22,7 +22,7 @@ export default function LawsPage() {
             <h3 style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.1rem',marginBottom:'var(--space-md)',color:'var(--near-black)'}}>Constitutional Documents</h3>
             <div style={{display:'flex',gap:'var(--space-lg)',flexWrap:'wrap',alignItems:'center'}}>
               <Link to="/provisional-constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
-                Provisional Constitution (RY5)
+                Provisional Constitution (2025)
                 <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--blue-light)',color:'var(--blue-deep)',fontWeight:500}}>已失效</span>
               </Link>
               <Link to="/constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
