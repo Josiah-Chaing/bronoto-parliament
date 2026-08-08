@@ -40,7 +40,7 @@ export default function MembersPage() {
       <section className="page-section white">
         <div className="section-inner">
           <p style={{color:'var(--text-secondary)',marginBottom:'var(--space-lg)',fontSize:'.9rem',maxWidth:800}}>
-            The Bronoto Parliament consists of 500 directly elected members serving four-year terms. Seats are allocated by population across seven primary divisions using a parallel voting system of single-seat constituencies and proportional representation, modeled on the Japanese National Diet.
+            The Bronoto Parliament consists of 166 members: 100 elected from single-seat constituencies and 66 from party-list proportional representation, serving four-year terms with a one-term re-election limit. Seats are allocated by population across seven primary divisions.
           </p>
           <div className="search-bar" style={{marginBottom:'var(--space-lg)'}}><input type="text" placeholder="Search by name or district…" value={search} onChange={e => setSearch(e.target.value)} /></div>
           
