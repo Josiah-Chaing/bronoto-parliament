@@ -92,7 +92,7 @@ Since the April 27 Resolution, Bronoto has chosen constitutional democracy as it
           </p>
           <div className="hero-search" ref={searchRef}>
             <div className="hero-search-outer">
-              <div className="hero-search-meta"><span>{siteConfig.totalBudget} <span className="hero-search-upgrade">2026 BUDGET</span></span><span className="hero-search-powered"><Sparkles size={10} /> {siteConfig.currentSession}</span></div>
+              <div className="hero-search-meta"><span>{siteConfig.totalBudget} <span className="hero-search-upgrade">6 BUDGET</span></span><span className="hero-search-powered"><Sparkles size={10} /> {siteConfig.currentSession}</span></div>
               <div className="hero-search-input-row"><input type="text" placeholder="Search bills, members, records…" /><button className="hero-search-submit" aria-label="Search"><ArrowUp size={16} /></button></div>
               <div className="hero-search-actions"><div className="hero-search-actions-left"><button className="hero-search-action-btn"><Paperclip size={12} /> Attach</button><button className="hero-search-action-btn"><Mic size={12} /> Voice</button><button className="hero-search-action-btn"><Search size={12} /> Prompts</button></div><span className="hero-search-count">0/3,000</span></div>
             </div>
