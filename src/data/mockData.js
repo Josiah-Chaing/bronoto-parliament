@@ -540,7 +540,6 @@ export const laws = [
   { id: 7, title: '反極權主義宣傳法案', status: 'review', statusLabel: '制定中' },
   { id: 8, title: '地方自治法案', status: 'review', statusLabel: '制定中' },
   { id: 10, title: '政黨法案', status: 'review', statusLabel: '制定中' },
-  { id: 11, title: '公職人員選舉法案', status: 'review', statusLabel: '制定中' },
 ];
 
 export const siteConfig = {
