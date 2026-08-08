@@ -360,7 +360,7 @@ export default function ConstitutionPage() {
       <section className="page-section white">
         <div className="section-inner">
           <div style={{marginBottom:'var(--space-2xl)',display:'flex',alignItems:'center',gap:'var(--space-md)',flexWrap:'wrap'}}>
-            <span style={{fontSize:'.8rem',padding:'4px 12px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:600,fontFamily:'var(--font-ui)'}}>國民公投中</span>
+            <span style={{fontSize:'.8rem',padding:'4px 12px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:600,fontFamily:'var(--font-ui)'}}>生效</span>
             <span style={{fontSize:'.85rem',color:'var(--text-muted)',fontFamily:'var(--font-ui)'}}>本草案由立憲委員會起草，於民國六年六月一日提交國會審議</span>
           </div>
           

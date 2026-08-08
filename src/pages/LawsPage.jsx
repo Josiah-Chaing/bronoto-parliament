@@ -27,7 +27,7 @@ export default function LawsPage() {
               </Link>
               <Link to="/constitution" style={{padding:'var(--space-md) var(--space-xl)',background:'var(--blue-pale)',borderRadius:'var(--radius)',fontFamily:'var(--font-ui)',fontWeight:600,fontSize:'.85rem',display:'flex',alignItems:'center',gap:'var(--space-sm)'}}>
                 Constitution of Bronoto
-                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:500}}>國民公投中</span>
+                <span style={{fontSize:'.7rem',padding:'2px 8px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:500}}>生效</span>
               </Link>
             </div>
           </div>
