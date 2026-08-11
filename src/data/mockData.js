@@ -205,12 +205,12 @@ export const laws = [
   { id: 5, title: '公職人員財產公示法', status: 'passed', statusLabel: '生效' },
   { id: 6, title: '公職人員選舉法', status: 'passed', statusLabel: '生效' },
   { id: 12, title: '國會組織法', status: 'passed', statusLabel: '生效' },
-  { id: 7, title: '反極權主義宣傳法案', status: 'review', statusLabel: '制定中' },
-  { id: 8, title: '地方自治法案', status: 'review', statusLabel: '制定中' },
+  { id: 7, title: '反極權主義宣傳法', status: 'passed', statusLabel: '生效' },
+  { id: 8, title: '地方自治法', status: 'passed', statusLabel: '生效' },
   { id: 10, title: '政黨法', status: 'passed', statusLabel: '生效' },
-  { id: 13, title: '和平法案', status: 'review', statusLabel: '制定中' },
-  { id: 14, title: '國防法案', status: 'review', statusLabel: '制定中' },
-  { id: 15, title: '憲法訴訟法案', status: 'review', statusLabel: '制定中' },
+  { id: 13, title: '和平法', status: 'passed', statusLabel: '生效' },
+  { id: 14, title: '國防法', status: 'passed', statusLabel: '生效' },
+  { id: 15, title: '憲法訴訟法', status: 'passed', statusLabel: '生效' },
 ];
 
 export const siteConfig = {
@@ -223,7 +223,7 @@ export const siteConfig = {
   currentSession: '6年度第三會期',
   sessionStart: '6年7月1日',
   sessionEnd: '6年12月31日',
-  billsInReview: 5,
-  billsPassed: 8,
+  billsInReview: 0,
+  billsPassed: 13,
   totalBudget: '1,537,029 普斯 & 147 人民幣元',
 };
