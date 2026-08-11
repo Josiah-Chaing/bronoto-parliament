@@ -1,4 +1,4 @@
-import { ArrowUp } from 'lucide-react';
+﻿import { ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const preamble = `序言
@@ -361,7 +361,7 @@ export default function ConstitutionPage() {
         <div className="section-inner">
           <div style={{marginBottom:'var(--space-2xl)',display:'flex',alignItems:'center',gap:'var(--space-md)',flexWrap:'wrap'}}>
             <span style={{fontSize:'.8rem',padding:'4px 12px',borderRadius:'10px',background:'var(--gold-light)',color:'var(--near-black)',fontWeight:600,fontFamily:'var(--font-ui)'}}>生效</span>
-            <span style={{fontSize:'.85rem',color:'var(--text-muted)',fontFamily:'var(--font-ui)'}}>本憲法經國民公投通過，於6年8月8日生效，為白東民國最高法律</span>
+            <span style={{fontSize:'.85rem',color:'var(--text-muted)',fontFamily:'var(--font-ui)'}}>本憲法經國民公投通過，於6年8月11日總統公佈生效，為白東民國最高法律</span>
           </div>
           
           <div style={{maxWidth:800,margin:'0 auto'}}>
