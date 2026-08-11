@@ -1,4 +1,4 @@
-export const parliamentMembers = [
+﻿export const parliamentMembers = [
   { id: 1, name: 'Abolyo Putyag', party: '自由共和黨', district: '奉天都第一選區', committee: '內務與法制委員會', since: '6', role: '民國府總理', email: 'abolyo.putyag@parliament.bd' },
   { id: 2, name: 'Motyselin Setti', party: '自由共和黨', district: '奉天都第二選區', committee: '外交與國防委員會', since: '6', role: '—', email: 'motyselin.setti@parliament.bd' },
   { id: 3, name: 'Delyon Velyak', party: '自由共和黨', district: '奉天都第三選區', committee: '社會福利與衛生委員會', since: '6', role: '—', email: 'delyon.velyak@parliament.bd' },
@@ -207,7 +207,10 @@ export const laws = [
   { id: 12, title: '國會組織法', status: 'passed', statusLabel: '生效' },
   { id: 7, title: '反極權主義宣傳法案', status: 'review', statusLabel: '制定中' },
   { id: 8, title: '地方自治法案', status: 'review', statusLabel: '制定中' },
-  { id: 10, title: '政黨法案', status: 'review', statusLabel: '制定中' },
+  { id: 10, title: '政黨法', status: 'passed', statusLabel: '生效' },
+  { id: 13, title: '和平法案', status: 'review', statusLabel: '制定中' },
+  { id: 14, title: '國防法案', status: 'review', statusLabel: '制定中' },
+  { id: 15, title: '憲法訴訟法案', status: 'review', statusLabel: '制定中' },
 ];
 
 export const siteConfig = {
@@ -220,7 +223,7 @@ export const siteConfig = {
   currentSession: '6年度第三會期',
   sessionStart: '6年7月1日',
   sessionEnd: '6年12月31日',
-  billsInReview: 3,
-  billsPassed: 7,
+  billsInReview: 5,
+  billsPassed: 8,
   totalBudget: '1,537,029 普斯 & 147 人民幣元',
 };
