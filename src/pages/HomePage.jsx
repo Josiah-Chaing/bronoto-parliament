@@ -100,6 +100,25 @@ Since the April 27 Resolution, Bronoto has chosen constitutional democracy as it
         </div>
       </section>
 
+      <section className="stand-with-ukraine" aria-label="Stand with Ukraine">
+        <div className="section-inner stand-inner">
+          <div className="stand-copy" data-reveal="reveal-up">
+            <div className="section-label">Solidarity</div>
+            <h2 className="stand-hashtag">#StandWithUkraine</h2>
+            <p className="stand-note">Bronoto joins the international community in marking 35 years of Ukrainian independence.</p>
+          </div>
+          <div className="stand-flags" data-reveal="reveal-up">
+            <div className="stand-flag">
+              <div className="flag flag-bronoto" role="img" aria-label="白東民國國旗"></div>
+              <span className="flag-caption">Bronoto</span>
+            </div>
+            <div className="stand-flag">
+              <div className="flag flag-ukraine" role="img" aria-label="烏克蘭國旗"></div>
+              <span className="flag-caption">Ukraine</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="page-section white"><div className="section-inner"><div className="section-label">Services</div><h2 className="section-headline"><span className="reveal-line"><span>Navigate Parliament</span></span></h2><QuickLinks /></div></section>
 
       <section className="page-section"><div className="section-inner stagger-cards">

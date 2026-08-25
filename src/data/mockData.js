@@ -1,4 +1,4 @@
-﻿export const parliamentMembers = [
+export const parliamentMembers = [
   { id: 1, name: 'Abolyo Putyag', party: '自由共和黨', district: '奉天都第一選區', committee: '內務與法制委員會', since: '6', role: '民國府總理', email: 'abolyo.putyag@parliament.bd' },
   { id: 2, name: 'Motyselin Setti', party: '自由共和黨', district: '奉天都第二選區', committee: '外交與國防委員會', since: '6', role: '—', email: 'motyselin.setti@parliament.bd' },
   { id: 3, name: 'Delyon Velyak', party: '自由共和黨', district: '奉天都第三選區', committee: '社會福利與衛生委員會', since: '6', role: '—', email: 'delyon.velyak@parliament.bd' },
@@ -186,6 +186,7 @@ export const otherOfficials = [
 
 export const newsArticles = [
   { id: 11, title: '從五百席到一百五十席：白東國會完成憲政交接', date: '6年11月17日', category: '憲政', summary: '第五屆國會選舉結果正式公告，一百五十名新當選議員首次以單一選區兩票制產生，標誌國會改革方案正式落地。自由共和黨贏得過半席位，民主黨維持最大反對黨地位，社會團結黨繼續扮演關鍵少數。總理普提亞格於八月十四日史無前例地主動發起對自身政府的不信任投票，加速新制施行，國會於九月十四日依法自動解散。新國會將於11月二十日首次集會。' },
+  { id: 14, title: '白東祝賀烏克蘭獨立三十五週年', date: '6年8月24日', category: '國際交流', summary: '值此烏克蘭獨立三十五週年之際，白東民國重申對烏克蘭人民追求自由、主權與領土完整之堅定支持。白東與國際社會一道，聲援烏克蘭。' },
   { id: 13, title: '自由共和黨提出不信任案加速國會改革', date: '6年8月14日', category: '憲政', summary: '自由共和黨於8月12日提出對本黨總理普提亞格的不信任案，旨在觸發憲法規定的三十日解散機制，加速國會議席改革方案落地。此舉為白東憲政史上首次由執政黨對自身政府提出不信任案。' },
   { id: 12, title: '國會通過《戰爭與和平大法案》及《憲政秩序保障大法案》', date: '6年8月13日', category: '法案', summary: '國會於8月十三日表決通過兩項重大法案：《戰爭與和平大法案》確立白東和平主義國防原則及自衛權行使規範，《憲政秩序保障大法案》強化憲法法院職能與違憲審查機制，為憲政秩序提供制度性保障。' },
   { id: 10, title: '外國法及判例補充適用法通過', date: '6年7月31日', category: '法案', summary: '白東法院得參引法治先進國家成文法、判例法。本法為白東司法體系引進比較法資源提供法律依據。' },
