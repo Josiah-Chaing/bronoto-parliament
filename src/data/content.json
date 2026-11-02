@@ -205,7 +205,7 @@
     {
       "id": 2,
       "name": "內務與法制委員會",
-      "chair": "—",
+      "chair": "Abolyo Putyag",
       "members": 6,
       "description": "審查法律案、憲法修正案、司法制度、人權保障、地方自治及民政相關政策。"
     },
@@ -279,7 +279,7 @@
       "district": "奉天都第一選區",
       "committee": "內務與法制委員會",
       "since": "6",
-      "role": "民國府總理",
+      "role": "議長",
       "email": "abolyo.putyag@parliament.bd"
     },
     {
@@ -329,7 +329,7 @@
       "district": "奉天都第六選區",
       "committee": "—",
       "since": "6",
-      "role": "議長",
+      "role": "民國府總理",
       "email": "chiang.menkin@parliament.bd"
     },
     {
