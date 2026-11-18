@@ -3,6 +3,8 @@ import { parliamentMembers } from '../data/mockData';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const PAGE_SIZE = 24;
+const hasPosition = member => [member.committee, member.role]
+  .some(value => value?.trim() && value.trim() !== '—');
 
 export default function MembersPage() {
   const [search, setSearch] = useState('');
@@ -23,7 +25,7 @@ export default function MembersPage() {
       if (divisionFilter !== 'all' && !m.district.startsWith(divisionFilter)) return false;
       if (search && !m.name.toLowerCase().includes(search.toLowerCase()) && !m.district.includes(search)) return false;
       return true;
-    });
+    }).sort((a, b) => Number(hasPosition(b)) - Number(hasPosition(a)));
   }, [search, partyFilter, committeeFilter, divisionFilter]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
