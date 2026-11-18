@@ -279,7 +279,7 @@
       "district": "奉天都第一選區",
       "committee": "內務與法制委員會",
       "since": "6",
-      "role": "議長",
+      "role": "民國府外交部長",
       "email": "abolyo.putyag@parliament.bd"
     },
     {
@@ -289,7 +289,7 @@
       "district": "奉天都第二選區",
       "committee": "外交與國防委員會",
       "since": "6",
-      "role": "—",
+      "role": "民國府國防部長",
       "email": "motyselin.setti@parliament.bd"
     },
     {
@@ -459,7 +459,7 @@
       "district": "江陵省第三選區",
       "committee": "內務與法制委員會",
       "since": "6",
-      "role": "—",
+      "role": "民國府法務部長",
       "email": "konrad.weber@parliament.bd"
     },
     {
@@ -605,11 +605,11 @@
     {
       "id": 34,
       "name": "Teai Kinmen",
-      "party": "自由共和黨",
+      "party": "民主黨",
       "district": "宏悉道第一選區",
-      "committee": "社會福利與衛生委員會",
+      "committee": "—",
       "since": "6",
-      "role": "—",
+      "role": "國會議長",
       "email": "teai.kinmen@parliament.bd"
     },
     {
@@ -769,7 +769,7 @@
       "district": "宏悉道第十七選區",
       "committee": "財政與經濟委員會",
       "since": "6",
-      "role": "—",
+      "role": "民國府財政部長",
       "email": "tseng.hontso@parliament.bd"
     },
     {
